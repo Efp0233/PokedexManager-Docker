@@ -1,0 +1,11 @@
+# Volúmenes de MongoDB (creados por Docker)
+mongo_data/
+
+# Logs generales o archivos temporales
+*.log
+.DS_Store
+
+# Archivos de sistema o editor
+.idea/
+.vscode/
+*.swp
