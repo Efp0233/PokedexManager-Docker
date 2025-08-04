@@ -1,8 +1,13 @@
-# backend/Dockerfile
 FROM node:18
+
 WORKDIR /app
-COPY . .
+
+COPY package*.json ./
 RUN npm install
+
+COPY . .
+COPY .env .env
+
 EXPOSE 4000
+
 CMD ["npm", "start"]
-# este dockerfile es para el backend de la aplicacion, que corre en node.js

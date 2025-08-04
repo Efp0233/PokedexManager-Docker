@@ -11,6 +11,7 @@ import PokemonRoutes from './routes/PokemonRoutes.js';
 const app = express();
 app.use(express.json());
 dotenv.config();
+console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
 
 conectarDB();
 
