@@ -1,12 +1,60 @@
-🧪 Pokédex Manager — Orquestación Full-Stack con Docker
+#🧪 Pokédex Manager — Orquestación Full-Stack con Docker
 Este proyecto orquesta un stack full-stack para una Pokédex personalizable, usando React (Vite) en frontend, Node.js + Express en backend, y MongoDB local para persistencia, todo coordinado con Docker Compose.
 
-🚀 Levantamiento rápido
-Asegúrate de tener Docker instalado. Luego ejecuta:
+#🚀 Levantamiento rápido
+1. asegurate de tener istalado y funcionando Docker
+2. Abre VSCode en una nueva pestana
+3. Descarga el Repositorio y en tu terminal git bash ejecta el siguiente comando
+```bash
+git clone https://github.com/Efp0233/PokedexManager-Docker.git
+cd PokedexManager-Docker
+```
+4. en la misma terminal ejecuta este comando para configurar Las variables de Entorno con el siguiente comando
+```bash
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+```
+5. Te Creara los respectivos .env en cada repositorio
+6. los .env de backend solo son es necesarios cambiar para el correcto funcionamiento de el envion de emails para que registres tu cuenta y recibas tu email de confirmacion en tu campo de sandbox
+```bash
+EMAIL_USER=e75b5077f1f5df
+EMAIL_PASS=3d11ade4c727a5
+EMAIL_HOST=sandbox.smtp.mailtrap.io
+EMAIL_PORT=2525
+```
+7. despues de haber cambiado los .env en la misma terminal ejecuta este comando
+```bash
+docker-compose up --build
+```
+##Esto construye los contenedores y levanta:
 
+1. 📡 Backend en http://localhost:4000
+
+2. 🎨 Frontend en http://localhost:5173
+
+3. 🧠 MongoDB con volumen persistente en mongo_data
+
+
+
+
+
+```bash
 bash
 docker-compose up --build
-Esto levanta:
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Backend disponible en http://localhost:4000
 
