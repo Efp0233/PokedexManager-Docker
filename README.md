@@ -21,6 +21,9 @@ EMAIL_USER=e75b5077f1f5df
 EMAIL_PASS=3d11ade4c727a5
 EMAIL_HOST=sandbox.smtp.mailtrap.io
 EMAIL_PORT=2525
+
+//NOTA: para los campos EMAIL_ tienes que crear una cuenta en mailtrap -> Iniciar sesion -> sandboxes en panel izquierdo -> add a project -> escribes un nombre para tu proyecto -> add sandboxes (un sandbox name) -> ingresas a tu proyecto -> integration
+una vez estes en integration daras click en smtp y ahi estara un listado con las credenciales que necesitas para pegar en el .env (host,port,username,password) con un click copias y pegas en el .env
 ```
 7. despues de haber cambiado los .env en la misma terminal ejecuta este comando
 ```bash
@@ -33,35 +36,10 @@ docker-compose up --build
 2. 🎨 Frontend en http://localhost:5173
 
 3. 🧠 MongoDB con volumen persistente en mongo_data
+   
 
-
-
-
-
+##Base de datos MongoDB accesible dentro del contenedor como mongodb://mongo:27017/pokedex
 ```bash
-bash
-docker-compose up --build
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Backend disponible en http://localhost:4000
-
-Frontend disponible en http://localhost:5173
-
-Base de datos MongoDB accesible dentro del contenedor como mongodb://mongo:27017/pokedex
-
 📁 Estructura del proyecto
 ├── backend                 # API REST con Express y conexión a MongoDB
 │   └── .env.example        # Variables de entorno de ejemplo
@@ -69,7 +47,9 @@ Base de datos MongoDB accesible dentro del contenedor como mongodb://mongo:27017
 │   └── .env.example        # Variables de entorno de ejemplo
 ├── docker-compose.yml      # Orquestación de servicios
 └── mongo_data              # Volumen persistente (creado automáticamente)
-⚙️ Variables de entorno
+```
+##⚙️ Variables de entorno
+```bash
 Backend — backend/.env
 env
 PORT=4000
@@ -78,21 +58,22 @@ Frontend — frontend/.env
 env
 VITE_API_URL=http://localhost:4000
 Incluye los archivos .env.example en ambos proyectos para facilitar el onboarding técnico.
+```
 
-🔁 Comandos útiles
+##🔁 Comandos útiles
+```bash
 Comando	Descripción
 docker-compose up --build	Levanta el stack completo
 docker-compose down -v	Elimina contenedores y volúmenes
 docker volume ls	Lista volúmenes activos
 docker exec -it <backend_container> bash	Accede al backend vía terminal
-✅ Validación técnica
-Comunicación activa entre frontend, backend y base de datos
+```
 
-Persistencia de datos garantizada por el volumen mongo_data
-
-Arquitectura modular, escalable y desacoplada
-
-Onboarding reproducible en cualquier entorno con Docker
+##✅ Validación técnica
+1. Comunicación activa entre frontend, backend y base de datos
+2. Persistencia de datos garantizada por el volumen mongo_data
+3. Arquitectura modular, escalable y desacoplada
+4. Onboarding reproducible en cualquier entorno con Docker
 
 💡 Notas para evaluadores
 Este repositorio está optimizado para entregas técnicas:
@@ -105,5 +86,5 @@ Documentación orientada a evaluadores y desarrolladores
 
 Preparado para escalar con autenticación, roles o despliegue externo
 
-🧠 Autor
+#🧠 Autor
 Edwin Jahir Flores Palafox Full-stack developer | MERN | Docker | Documentación profesional Repositorio: https://github.com/Efp0233/PokedexManager-Docker
