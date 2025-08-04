@@ -1,7 +1,7 @@
-#🧪 Pokédex Manager — Orquestación Full-Stack con Docker
+# 🧪 Pokédex Manager — Orquestación Full-Stack con Docker
 Este proyecto orquesta un stack full-stack para una Pokédex personalizable, usando React (Vite) en frontend, Node.js + Express en backend, y MongoDB local para persistencia, todo coordinado con Docker Compose.
 
-#🚀 Levantamiento rápido
+# 🚀 Levantamiento rápido
 1. asegurate de tener istalado y funcionando Docker
 2. Abre VSCode en una nueva pestana
 3. Descarga el Repositorio y en tu terminal git bash ejecta el siguiente comando
@@ -29,7 +29,7 @@ una vez estes en integration daras click en smtp y ahi estara un listado con las
 ```bash
 docker-compose up --build
 ```
-##Esto construye los contenedores y levanta:
+## Esto construye los contenedores y levanta:
 
 1. 📡 Backend en http://localhost:4000
 
@@ -38,7 +38,7 @@ docker-compose up --build
 3. 🧠 MongoDB con volumen persistente en mongo_data
    
 
-##Base de datos MongoDB accesible dentro del contenedor como mongodb://mongo:27017/pokedex
+## Base de datos MongoDB accesible dentro del contenedor como mongodb://mongo:27017/pokedex
 ```bash
 📁 Estructura del proyecto
 ├── backend                 # API REST con Express y conexión a MongoDB
@@ -48,7 +48,7 @@ docker-compose up --build
 ├── docker-compose.yml      # Orquestación de servicios
 └── mongo_data              # Volumen persistente (creado automáticamente)
 ```
-##⚙️ Variables de entorno
+## ⚙️ Variables de entorno
 ```bash
 Backend — backend/.env
 env
@@ -60,7 +60,7 @@ VITE_API_URL=http://localhost:4000
 Incluye los archivos .env.example en ambos proyectos para facilitar el onboarding técnico.
 ```
 
-##🔁 Comandos útiles
+## 🔁 Comandos útiles
 ```bash
 Comando	Descripción
 docker-compose up --build	Levanta el stack completo
@@ -69,22 +69,18 @@ docker volume ls	Lista volúmenes activos
 docker exec -it <backend_container> bash	Accede al backend vía terminal
 ```
 
-##✅ Validación técnica
+## ✅ Validación técnica
 1. Comunicación activa entre frontend, backend y base de datos
 2. Persistencia de datos garantizada por el volumen mongo_data
 3. Arquitectura modular, escalable y desacoplada
 4. Onboarding reproducible en cualquier entorno con Docker
 
-💡 Notas para evaluadores
+## 💡 Notas para evaluadores
 Este repositorio está optimizado para entregas técnicas:
+1. Separación clara de responsabilidades (API, UI, DB)
+2. Levantamiento sin fricciones
+3. Documentación orientada a evaluadores y desarrolladores
+4. Preparado para escalar con autenticación, roles o despliegue externo
 
-Separación clara de responsabilidades (API, UI, DB)
-
-Levantamiento sin fricciones
-
-Documentación orientada a evaluadores y desarrolladores
-
-Preparado para escalar con autenticación, roles o despliegue externo
-
-#🧠 Autor
+# 🧠 Autor
 Edwin Jahir Flores Palafox Full-stack developer | MERN | Docker | Documentación profesional Repositorio: https://github.com/Efp0233/PokedexManager-Docker
