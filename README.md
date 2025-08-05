@@ -4,12 +4,12 @@ Este proyecto orquesta un stack full-stack para una Pokédex personalizable, usa
 # 🚀 Levantamiento rápido
 1. asegurate de tener istalado y funcionando Docker, https://www.youtube.com/watch?v=AxBQFrHK35c
 2. Abre VSCode en una nueva pestana
-3. Descarga el Repositorio o en tu terminal git bash ejecuta el siguiente comando
+3. Descarga el Repositorio o en tu terminal ejecuta el siguiente comando
 ```bash
 git clone https://github.com/Efp0233/PokedexManager-Docker.git
 cd PokedexManager-Docker
 ```
-4. en la misma terminal ejecuta este comando para configurar Las variables de Entorno con el siguiente comando
+4. situandote en la carpeta PokedexManager-Docker en la terminal ejecuta este comando para configurar Las variables de Entorno con el siguiente comando
 ```bash
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
@@ -25,11 +25,12 @@ EMAIL_PORT=2525
 //NOTA: para los campos EMAIL_ tienes que crear una cuenta en mailtrap -> Iniciar sesion -> sandboxes en panel izquierdo -> add a project -> escribes un nombre para tu proyecto -> add sandboxes (un sandbox name) -> ingresas a tu proyecto -> integration
 una vez estes en integration daras click en smtp y ahi estara un listado con las credenciales que necesitas para pegar en el .env (host,port,username,password) con un click copias y pegas en el .env
 ```
-7. despues de haber cambiado los .env en la misma terminal ejecuta este comando
+7. despues de haber cambiado los .env y estar en la carpeta descargada "PokedexManager-Docker" si no estas en esa carpeta en la terminal ejecuta el comando "cd PokedexManager-Docker"
+8. despues asegurate de tener docker abierto y funcionando para ejecutar el siguiente comando
 ```bash
 docker-compose up --build
 ```
-## Esto construye los contenedores y levanta:
+## Esto en la app de docker construye los contenedores y levanta:
 
 1. 📡 Backend en http://localhost:4000
 
