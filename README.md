@@ -4,7 +4,7 @@ Este proyecto orquesta un stack full-stack para una Pokédex personalizable, usa
 # 🚀 Levantamiento rápido
 1. asegurate de tener istalado y funcionando Docker
 2. Abre VSCode en una nueva pestana
-3. Descarga el Repositorio y en tu terminal git bash ejecta el siguiente comando
+3. Descarga el Repositorio o en tu terminal git bash ejecuta el siguiente comando
 ```bash
 git clone https://github.com/Efp0233/PokedexManager-Docker.git
 cd PokedexManager-Docker
@@ -15,10 +15,10 @@ cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 ```
 5. Te Creara los respectivos .env en cada repositorio
-6. los .env de backend solo son es necesarios cambiar para el correcto funcionamiento de el envion de emails para que registres tu cuenta y recibas tu email de confirmacion en tu campo de sandbox
+6. los .env de backend solo son necesarios cambiar para el correcto funcionamiento de el envio de emails para que registres tu cuenta y recibas tu email de confirmacion en tu campo de sandbox
 ```bash
-EMAIL_USER=e75b5077f1f5df
-EMAIL_PASS=3d11ade4c727a5
+EMAIL_USER=e75b5077f3235df
+EMAIL_PASS=3d11ade4c702a5
 EMAIL_HOST=sandbox.smtp.mailtrap.io
 EMAIL_PORT=2525
 
@@ -51,12 +51,7 @@ docker-compose up --build
 ## ⚙️ Variables de entorno
 ```bash
 Backend — backend/.env
-env
-PORT=4000
-MONGO_URI=mongodb://mongo:27017/pokedex
-Frontend — frontend/.env
-env
-VITE_API_URL=http://localhost:4000
+Frontedb frontend/ .env
 Incluye los archivos .env.example en ambos proyectos para facilitar el onboarding técnico.
 ```
 
