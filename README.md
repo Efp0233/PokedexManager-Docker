@@ -1,8 +1,9 @@
 # 🧪 Pokédex Manager — Orquestación Full-Stack con Docker
 Este proyecto orquesta un stack full-stack para una Pokédex personalizable, usando React (Vite) en frontend, Node.js + Express en backend, y MongoDB local para persistencia, todo coordinado con Docker Compose.
 
+
 # 🚀 Levantamiento rápido
-1. asegurate de tener istalado y funcionando Docker, https://www.youtube.com/watch?v=AxBQFrHK35c
+1. asegurate de tener instalado y funcionando Docker, https://www.youtube.com/watch?v=AxBQFrHK35c
 2. Abre VSCode en una nueva pestana
 3. Descarga el Repositorio o en tu terminal ejecuta el siguiente comando
 ```bash
